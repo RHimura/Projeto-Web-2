@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliação 2 CSS HTML</title>
+    <link rel="shortcut icon" href="img/Design sem nome.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- HEADER - TOPO-->
+        <div class="topo">
+            <div class="logo-texto">
+                <img src="img/Design sem nome.png" alt="Nome da Empresa" class="logo" />
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" target="_blank">HOME</a></li>
+                    <li><a href="empresa.html" target="_blank">EMPRESA</a></li>
+                    <li><a href="servicos.html" target="_blank">SERVIÇOS</a></li>
+                    <li><a href="portfolio.html" target="_blank">PORTFÓLIO</a></li>
+                    <li><a href="contato.html" target="_blank">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- HEADER - SLOGAN -->
+        <div class="slogan">
+            <p>MODELO DE SITE PADRÃO 2</p>
+        </div>
+
+        <!-- HEADER - SOMBREADO -->
+        <div class="sombreado"></div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO INFOS -->
+        <section class="infos">
+            <!-- DIV INFOS - ITENS -->
+            <div class="itens">
+                <div class="item">
+                    <img src="img/NT.png" alt="Site" />
+                    <p>SITES</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
+                        massa ultricies.
+                    </p>
+                    <button class="button">Entrar</button>
+                </div>
+                <div class="item">
+                    <img src="img/DBA.png" alt="Hospedagem" />
+                    <p>HOSPEDAGEM</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
+                        massa ultricies.
+                    </p>
+                    <button class="button">Entrar</button>
+                </div>
+                <div class="item">
+                    <img src="img/BT.png" alt="Manutenção" />
+                    <p>MANUTENÇÃO</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
+                        massa ultricies.
+                    </p>
+                    <button class="button">Entrar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO BEM-VINDO -->
+        <section class="bem-vindo">
+            <div class="conteudo-bem-vindo">
+                <h2>SEJA BEM-VINDO</h2>
+                <p>Veja o nosso site e encontre a sua solução para seu Site.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
+                    massa ultricies lorem lacinia eleifend ac sit amet mauris. Aliquam
+                    eget condimentum urna, vitae tristique mi. Aenean dapibus purus et
+                    magna vehicula, efficitur elementum risus pulvinar.
+                </p>
+                <button class="button">Entrar</button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SERVIÇOS -->
+        <section class="servicos">
+            <h2>VEJA ALGUNS DOS NOSSOS SERVIÇOS</h2>
+            <div class="cards">
+                <div class="card" tabindex="0">
+                    <img src="img/otimizacao.png" alt="Otimização" />
+                    <h3>Otimização</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <img src="img/logotipo.png" alt="Logotipo" />
+                    <h3>Logotipo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <img src="img/newsletter.png" alt="Newsletter" />
+                    <h3>Newsletter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+                </div>
+                <div class="card" tabindex="0">
+                    <img src="img/cartao-visita.png" alt="Cartão Visita" />
+                    <h3>Cartão Visita</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section class="contato">
+            <h2>ENTRE EM CONTATO</h2>
+            <form class="formulario">
+                <div class="linha">
+                    <input type="text" placeholder="Nome:" required />
+                    <input type="email" placeholder="E-mail:" required />
+                </div>
+                <textarea placeholder="Mensagem:" rows="4" required></textarea>
+                <div class="captcha">
+                    <img src="img/recapcha.png" alt="reCAPTCHA simulado" />
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- MAPA (GOOGLE MAPS EMBED) -->
+        <div style="width: 100%; height: 400px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15457.223279332622!2d-51.316723!3d-14.409526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2d6688249813%3A0x92328269928cdb62!2sAg%C3%AAncia%20Projeto%20Web%20-%20Empresa%20de%20Cria%C3%A7%C3%A3o%20de%20Site!5e0!3m2!1spt-BR!2sus!4v1748567278707!5m2!1spt-BR!2sus"
+                width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape-site">
+        <div class="conteudo-principal-rodape">
+            <div class="contato-rodape">
+                <p>
+                    <img src="img/download.png" alt="Telefone" class="icone" />
+                    (19) 3886-1377
+                </p>
+                <p>
+                    <img src="img/email.png" alt="E-mail" class="icone" />
+                    comercial@projetoweb.com.br
+                </p>
+            </div>
+            <div class="redes-sociais-rodape">
+                    <img src="img/fb.png" alt="Facebook" class="icone-social" />
+                    <img src="img/insta.png" alt="Instagram" class="icone-social" />
+            </div>
+        </div>
+        <div class="credito-rodape">
+            <img src="img/by.png" alt="Créditos" />
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+/*HEADER (IMAGEM DE FUNDO)*/
+header {
+  background: url('img/Capa-destaque-BLOG-VIXTING-8.5-x-11-in-500-x-315-px-Capa-para-Facebook-1.png') no-repeat center/cover;
+  color: #fff;
+  height: 350px;
+  position: relative;
+}
+
+/*HEADER - TOPO (LOGO E MENU)*/
+.topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo-texto {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 600px;
+}
+
+.menu {
+  margin-left: 20px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  animation: slideFadeInFromLeft 0.6s ease-out forwards;
+}
+
+.menu li {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: dropFade 0.5s ease-out forwards;
+}
+
+.menu li:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.menu li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.menu li:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.menu li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.menu li:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #C96F33;
+}
+
+/*HEADER - SLOGAN*/
+.slogan {
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.slogan p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/*HEADER - SOMBREADO*/
+.sombreado {
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #8E7B57 100%);
+  margin-top: -80px;
+  position: relative;
+  z-index: 1;
+}
+
+/*SEÇÃO INFOS*/
+.infos {
+  background-color: #8E7B57;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/*SEÇÃO ITENS*/
+.itens {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: -80px;
+  gap: 5px;
+  background-color: #8E7B57;
+}
+
+.itens::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.item {
+  max-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.item p:first-of-type {
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.item p:last-of-type {
+  font-size: 16px;
+  max-width: 220px;
+  margin: 10px auto 0;
+  color: #f0f0f0;
+}
+
+/*BOTÕES*/
+.button,
+button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover,
+button:hover {
+  background: #C96F33;
+}
+
+/*SEÇÃO BEM-VINDO*/
+.bem-vindo {
+  background-color: #746547;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.conteudo-bem-vindo {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.bem-vindo h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.bem-vindo p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bem-vindo p:first-of-type {
+  color: #F27F33;
+}
+
+.bem-vindo p:last-of-type {
+  color: #fff;
+}
+
+/*SEÇÃO SERVIÇOS*/
+.servicos {
+  background-color: #fff;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.servicos h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #F27F33;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.card {
+  background: transparent;
+  padding: 20px;
+  max-width: 250px;
+  height: 350px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+  border-radius: 30px;
+  outline: none;
+  user-select: none;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0 0 10px rgba(41, 32, 32, 0.05);
+  border: 1.5px solid rgba(41, 32, 32, 0.05);
+  background-color: rgba(41, 32, 32, 0.05);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #F27F33;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #8D7A57;
+}
+
+.card img {
+  width: 150px;
+  height: 200px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/*SEÇÃO CONTATO*/
+.contato {
+  background-color: #F27F33;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contato h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.formulario {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.linha input {
+  flex: 1 1 250px;
+  padding: 12px 20px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  padding: 12px 20px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  height: 80px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-radius: 0 50px 50px 50px;
+  transition: 0.5s;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.captcha {
+  display: flex;
+  justify-content: center;
+}
+
+.captcha img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+/*MAPA EMBED*/
+iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*RODAPÉ*/
+.rodape-site {
+  background: #746346;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.conteudo-principal-rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.contato-rodape p {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.contato-rodape p+p {
+  margin-left: 60px;
+}
+
+.icone,
+.icone-social {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.redes-sociais-rodape {
+  margin-left: 5px;
+}
+
+.credito-rodape {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.credito-rodape img {
+  max-height: 100px;
+}
+
+/*ANIMAÇÕES*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dropFade {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
